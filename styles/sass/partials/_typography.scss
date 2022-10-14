@@ -1,45 +1,8 @@
 @use './variables';
 
+// General
 html {
   font-size: 125%;
-}
-
-h1 {
-  font-family: variables.$pacifico;
-  font-size: 3.4rem;
-  line-height: 3.2rem;
-}
-
-h2 {
-  font-family: variables.$pacifico;
-  font-size: 2.9rem;
-  line-height: 3.4rem;
-}
-
-// H3s
-.h3-one {
-  font-family: variables.$pacifico;
-  font-size: 2.15rem;
-  line-height: 2.9rem;
-  letter-spacing: 0.14rem;
-}
-.h3-two {
-  font-family: variables.$pacifico;
-  font-size: 2rem;
-  line-height: 2.12rem;
-}
-.h3-three {
-  font-family: variables.$pacifico;
-  font-size: 2rem;
-  text-align: right;
-  line-height: 2.9rem;
-  letter-spacing: 0.13rem;
-}
-
-h4 {
-  font-family: variables.$pacifico;
-  font-size: 1.75rem;
-  letter-spacing: 0.15rem;
 }
 
 .logo {
@@ -59,6 +22,7 @@ button {
 
 nav {
   font-family: variables.$lato;
+  font-weight: 700;
   text-align: center;
   line-height: 1.45rem;
   letter-spacing: 0.07rem;
@@ -66,6 +30,47 @@ nav {
 
 p {
   font-family: variables.$lato;
+  font-weight: 400;
   line-height: 1.4rem;
   letter-spacing: 0.1rem;
+}
+
+// Home
+.h1-home {
+  font-family: variables.$pacifico;
+  font-size: 2.9rem;
+  line-height: 3.4rem;
+}
+.h2-home {
+  font-family: variables.$pacifico;
+  font-size: 2.15rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.14rem;
+}
+.h3-home {
+  font-family: variables.$pacifico;
+  font-size: 2rem;
+  text-align: right;
+  line-height: 2.9rem;
+  letter-spacing: 0.13rem;
+}
+
+// Contact
+.h1-blog-con {
+  font-family: variables.$pacifico;
+  font-size: 3.4rem;
+  line-height: 3.2rem;
+}
+
+// Blog
+.h2-blog {
+  font-family: variables.$pacifico;
+  font-size: 2rem;
+  line-height: 2.12rem;
+}
+
+.h3-blog {
+  font-family: variables.$pacifico;
+  font-size: 1.75rem;
+  letter-spacing: 0.15rem;
 }
