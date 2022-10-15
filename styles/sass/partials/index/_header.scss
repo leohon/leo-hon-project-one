@@ -1,0 +1,14 @@
+@use '../variables';
+
+.home-header {
+  background-image: url('./textilee-assets/header-home.jpg');
+  background-repeat: no-repeat;
+
+  .h1-home {
+    color: variables.$slate-blue;
+    width: 50%;
+    margin-top: 50px;
+    height: 600px;
+  }
+}
+

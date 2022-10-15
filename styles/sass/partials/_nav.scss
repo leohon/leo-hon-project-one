@@ -1,0 +1,19 @@
+@use './variables';
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+
+  ul {
+    display: flex;
+
+    a {
+      padding-left: 50px;
+      text-transform: uppercase;
+      color: variables.$slate-blue;
+    }
+  }
+}
+
+

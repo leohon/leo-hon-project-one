@@ -226,6 +226,22 @@ html {
   overflow: hidden;
 }
 
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  z-index: 10;
+  background: #fff;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+.skipLink:focus {
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 html {
   font-size: 125%;
 }
@@ -297,4 +313,82 @@ p {
   font-family: "Pacifico", cursive;
   font-size: 1.75rem;
   letter-spacing: 0.15rem;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a, div, nav, h1, h2, h3, section, ul, i, p, img {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+nav ul a {
+  padding-left: 50px;
+  text-transform: uppercase;
+  color: #1A315C;
+}
+
+footer {
+  background: #161515;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+}
+
+.home-header {
+  background-image: url("./textilee-assets/header-home.jpg");
+  background-repeat: no-repeat;
+}
+.home-header .h1-home {
+  color: #1A315C;
+  width: 50%;
+  margin-top: 50px;
+  height: 600px;
+}
+
+.blog-header {
+  background-image: url("./textilee-assets/blog-header.jpg");
+  background-repeat: no-repeat;
+}
+.blog-header .h1-blog-con {
+  color: #1A315C;
+  width: 50%;
+  margin-top: 50px;
+  height: 410px;
+}
+
+.con-header {
+  background-image: url("./textilee-assets/contact-header.jpg");
+  background-repeat: no-repeat;
+}
+.con-header .h1-blog-con {
+  color: #1A315C;
+  width: 50%;
+  margin-top: 50px;
+  height: 415px;
 }

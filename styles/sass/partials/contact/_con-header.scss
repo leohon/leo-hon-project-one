@@ -1,0 +1,14 @@
+@use '../variables';
+
+.con-header {
+  background-image: url('./textilee-assets/contact-header.jpg');
+  background-repeat: no-repeat;
+
+  .h1-blog-con {
+    color: variables.$slate-blue;
+    width: 50%;
+    margin-top: 50px;
+    height: 415px;
+  }
+}
+

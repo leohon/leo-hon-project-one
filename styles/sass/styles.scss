@@ -1,3 +1,9 @@
 @use './partials/setup';
-@use "./partials/variables";
-@use "./partials/typography";
+@use './partials/variables';
+@use './partials/typography';
+@use './partials/globals';
+@use './partials/nav';
+@use './partials/footer';
+@use './partials/index/header';
+@use './partials/blog/blog-header';
+@use './partials/contact/con-header';

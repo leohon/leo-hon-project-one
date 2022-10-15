@@ -1,0 +1,14 @@
+@use '../variables';
+
+.blog-header {
+  background-image: url('./textilee-assets/blog-header.jpg');
+  background-repeat: no-repeat;
+
+  .h1-blog-con {
+    color: variables.$slate-blue;
+    width: 50%;
+    margin-top: 50px;
+    height: 410px;
+  }
+}
+
