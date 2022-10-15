@@ -3,12 +3,18 @@
 .home-header {
   background-image: url('./textilee-assets/header-home.jpg');
   background-repeat: no-repeat;
+  position: relative;
 
   .h1-home {
     color: variables.$slate-blue;
     width: 50%;
     margin-top: 50px;
     height: 600px;
+  }
+
+  img {
+    position: absolute;
+    bottom: -200px;
   }
 }
 
