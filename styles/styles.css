@@ -333,6 +333,10 @@ li a {
   text-decoration: none;
 }
 
+section {
+  padding: 100px 0;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,13 +357,6 @@ nav ul a {
   color: #1A315C;
 }
 
-footer {
-  background: #161515;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 10px;
-}
-
 .home-header {
   background-image: url("./textilee-assets/header-home.jpg");
   background-repeat: no-repeat;
@@ -369,11 +366,151 @@ footer {
   color: #1A315C;
   width: 50%;
   margin-top: 50px;
-  height: 600px;
+  height: 595px;
 }
 .home-header img {
   position: absolute;
   bottom: -200px;
+}
+
+.learn {
+  background-color: #CCEDFB;
+  padding-top: 250px;
+}
+.learn .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.learn .wrapper h2 {
+  color: #1A315C;
+}
+.learn .wrapper p {
+  padding: 20px 0px 40px 0;
+  margin-right: 140px;
+}
+.learn .wrapper .find-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #1A315C;
+  padding: 10px 40px;
+}
+.learn img {
+  -webkit-box-shadow: -15px 15px #0CADC0;
+          box-shadow: -15px 15px #0CADC0;
+}
+
+.gallery {
+  background-color: #21404f;
+}
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.up-comm-blog-get {
+  background-color: #CCEDFB;
+}
+.up-comm-blog-get .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.up-comm-blog-get .wrapper .ucbg-content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 50px;
+}
+.up-comm-blog-get .wrapper .ucbg-content i {
+  background-color: #0CADC0;
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 55px;
+  height: 55px;
+  padding: 10px 0;
+  margin: 10px;
+}
+.up-comm-blog-get .wrapper .ucbg-content p {
+  margin-top: 20px;
+}
+
+.dis-locate {
+  background-color: #21404f;
+  position: relative;
+}
+.dis-locate .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.dis-locate .wrapper div {
+  width: 50%;
+}
+.dis-locate .wrapper div h3, .dis-locate .wrapper div p {
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.dis-locate .wrapper div .read-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #1A315C;
+  background: #c6d9fb;
+  padding: 10px 40px;
+}
+.dis-locate .wrapper img {
+  position: absolute;
+  top: 0;
+}
+.dis-locate .wrapper .discover {
+  padding-left: 50px;
+}
+.dis-locate .wrapper .discover .dis {
+  text-align: left;
+}
+.dis-locate .wrapper .location {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.rope-img {
+  background-image: url("./textilee-assets/banner.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.search {
+  background-color: #CCEDFB;
+}
+.search .wrapper {
+  text-align: center;
+}
+.search h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.search p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.search .find-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #1A315C;
+  padding: 10px 40px;
 }
 
 .blog-header {
@@ -396,4 +533,11 @@ footer {
   width: 50%;
   margin-top: 50px;
   height: 415px;
+}
+
+footer {
+  background: #161515;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px;
 }

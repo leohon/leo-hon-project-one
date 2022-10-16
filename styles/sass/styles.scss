@@ -3,7 +3,13 @@
 @use './partials/typography';
 @use './partials/globals';
 @use './partials/nav';
-@use './partials/footer';
 @use './partials/index/index-header';
+@use './partials/index/learn';
+@use './partials/index/gallery';
+@use './partials/index/ucbg-section';
+@use './partials/index/dis-locate';
+@use './partials/index/rope';
+@use './partials/index/search-style';
 @use './partials/blog/blog-header';
 @use './partials/contact/con-header';
+@use './partials/footer';

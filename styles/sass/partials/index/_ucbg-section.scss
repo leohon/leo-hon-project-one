@@ -1,0 +1,33 @@
+@use '../variables';
+
+// up-comm-blog-get section
+.up-comm-blog-get {
+  background-color: variables.$sky-blue;
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    
+    .ucbg-content {
+      width: 50%;
+      display: flex;
+      padding-bottom: 50px;
+
+      i {
+        background-color: variables.$turquoise;
+        color: variables.$white;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 55px;
+        height: 55px;
+        padding: 10px 0;
+        margin: 10px;
+      }
+
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@use '../variables';
+
+// Gallery
+.gallery {
+  background-color: variables.$blue-dianne;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}

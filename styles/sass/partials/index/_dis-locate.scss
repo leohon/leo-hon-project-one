@@ -1,0 +1,51 @@
+@use '../variables';
+
+.dis-locate {
+  background-color: variables.$blue-dianne;
+  position: relative;
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+      width: 50%;
+      
+      h3, p {
+        color: variables.$white;
+        margin-bottom: 15px;
+      }
+
+      .read-button {
+        display: inline-block;
+        text-decoration: none;
+        color: variables.$slate-blue;
+        background: variables.$hawkes-blue;
+        padding: 10px 40px;
+      }
+    }
+
+    // individual img class for position
+      img {
+        position: absolute;
+        top: 0;
+        // right: 0;
+      }
+
+    .discover {
+      padding-left: 50px;
+      
+      .dis {
+        text-align: left;
+      }
+    }
+    
+    .location {
+      text-align: right;
+      padding-right: 50px;
+    }
+  }
+
+  
+  
+}

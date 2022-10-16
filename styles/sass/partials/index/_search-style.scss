@@ -1,0 +1,27 @@
+@use '../variables';
+
+.search {
+  background-color: variables.$sky-blue;
+
+  .wrapper {
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .find-button {
+    display: inline-block;
+    text-decoration: none;
+    color: variables.$white;
+    background-color: variables.$slate-blue;
+    padding: 10px 40px;
+  }
+}
