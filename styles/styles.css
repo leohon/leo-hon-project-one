@@ -397,8 +397,8 @@ nav ul a {
   padding: 10px 40px;
 }
 .learn img {
-  -webkit-box-shadow: -15px 15px #0CADC0;
-          box-shadow: -15px 15px #0CADC0;
+  -webkit-box-shadow: -20px 20px #0CADC0;
+          box-shadow: -20px 20px #0CADC0;
 }
 
 .gallery {
@@ -470,12 +470,23 @@ nav ul a {
   background: #c6d9fb;
   padding: 10px 40px;
 }
-.dis-locate .wrapper img {
+.dis-locate .wrapper .img-left {
   position: absolute;
-  top: 0;
+  top: -40px;
+  left: 0;
+  -webkit-box-shadow: 25px 25px #0CADC0;
+          box-shadow: 25px 25px #0CADC0;
+}
+.dis-locate .wrapper .img-right {
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  -webkit-box-shadow: -25px 25px #0CADC0;
+          box-shadow: -25px 25px #0CADC0;
 }
 .dis-locate .wrapper .discover {
   padding-left: 50px;
+  margin-bottom: 50px;
 }
 .dis-locate .wrapper .discover .dis {
   text-align: left;
@@ -483,12 +494,14 @@ nav ul a {
 .dis-locate .wrapper .location {
   text-align: right;
   padding-right: 50px;
+  margin-top: 50px;
 }
 
 .rope-img {
   background-image: url("./textilee-assets/banner.jpg");
   background-repeat: no-repeat;
-  height: 500px;
+  background-size: cover;
+  height: 480px;
 }
 
 .search {

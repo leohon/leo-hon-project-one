@@ -1,4 +1,4 @@
-@use '../variables';
+@use './variables';
 
 .dis-locate {
   background-color: variables.$blue-dianne;
@@ -25,15 +25,22 @@
       }
     }
 
-    // individual img class for position
-      img {
-        position: absolute;
-        top: 0;
-        // right: 0;
-      }
+    .img-left {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      box-shadow: 25px 25px variables.$turquoise;
+    }
+    .img-right {
+      position: absolute;
+      bottom: -40px;
+      right: 0;
+      box-shadow: -25px 25px variables.$turquoise;
+    }
 
     .discover {
       padding-left: 50px;
+      margin-bottom: 50px;
       
       .dis {
         text-align: left;
@@ -43,6 +50,7 @@
     .location {
       text-align: right;
       padding-right: 50px;
+      margin-top: 50px;
     }
   }
 

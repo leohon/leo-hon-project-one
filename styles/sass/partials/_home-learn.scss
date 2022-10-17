@@ -1,4 +1,4 @@
-@use '../variables';
+@use './variables';
 
 // Learn Section
 .learn {
@@ -27,6 +27,6 @@
   }
 
   img {
-    box-shadow: -15px 15px variables.$turquoise;
+    box-shadow: -20px 20px variables.$turquoise;
   }
 }
