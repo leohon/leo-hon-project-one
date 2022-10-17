@@ -438,8 +438,11 @@ nav ul a {
   text-align: center;
   width: 55px;
   height: 55px;
-  padding: 10px 0;
+  padding: 12px 0;
   margin: 10px;
+}
+.up-comm-blog-get .wrapper .ucbg-content h2 {
+  color: #1A315C;
 }
 .up-comm-blog-get .wrapper .ucbg-content p {
   margin-top: 20px;
@@ -485,16 +488,26 @@ nav ul a {
           box-shadow: -25px 25px #0CADC0;
 }
 .dis-locate .wrapper .discover {
-  padding-left: 50px;
+  padding-left: 100px;
   margin-bottom: 50px;
 }
 .dis-locate .wrapper .discover .dis {
   text-align: left;
 }
+.dis-locate .wrapper .discover h3 {
+  white-space: nowrap;
+}
+.dis-locate .wrapper .discover p {
+  width: 95%;
+}
 .dis-locate .wrapper .location {
   text-align: right;
-  padding-right: 50px;
+  padding-right: 85px;
   margin-top: 50px;
+}
+.dis-locate .wrapper .location p {
+  width: 95%;
+  margin-left: auto;
 }
 
 .rope-img {
@@ -506,6 +519,7 @@ nav ul a {
 
 .search {
   background-color: #CCEDFB;
+  padding: 150px 0;
 }
 .search .wrapper {
   text-align: center;
@@ -513,10 +527,12 @@ nav ul a {
 .search h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: #1A315C;
 }
 .search p {
   text-align: center;
   margin-bottom: 50px;
+  width: 101%;
 }
 .search .find-button {
   display: inline-block;
