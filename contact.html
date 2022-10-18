@@ -36,32 +36,49 @@
 
   <!-- Main -->
   <main id="main">
-    <section class="contact-info">
+    <section class="contact">
       <div class="wrapper">
-        <div class="icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-whatsapp"></i>
-        </div>
+        <div class="info">
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
 
-        <p>info@email.com</p>
-        <p>123 - 456 - 7890<br>123 Queen Street West,<br>Unit 10<br>Toronto, Ontario<br>M5V2D5</p>
+          <div class="address">
+            <p>info@email.com</p>
+            <p><br></p>
+            <p>123 - 456 - 7890</p>
+            <p>123 Queen Street West,</p>
+            <p>Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="form">
-      <form action="#" method="#" class="comment-form" name="comment-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
-        
-        <label for="email">Email address</label>
-        <input type="email" id="email" name="email">
-        
-        <input type="textarea" id="comment" name="comment" placeholder="Comment">
+      <div class="wrapper">
+        <form action="#" method="#" class="message-form" name="message-form">
+          <fieldset>
+            <div>
+              <label for="name">Name</label>
+              <input type="text" class="name" id="name" name="name">
+            </div>
+            <div>
+              <label for="email">Email address</label>
+              <input type="email" class="email" id="email" name="email">
+            </div>
+          </fieldset>
+          
+          <textarea class="message" id="message" name="message" placeholder="Message"></textarea>
 
-        <button type="submit" class="button submit-button">post comment</button>
-      </form>
+          <button type="submit" class="button submit-button">submit</button>
+        </form>
+      </div>
+      
     </section>
   </main>
 
