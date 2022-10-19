@@ -16,4 +16,8 @@ nav {
   }
 }
 
-
+.home-header .home,
+.blog-header .blog,
+.con-header .contact {
+  text-decoration: underline solid variables.$turquoise 3px;
+}

@@ -357,6 +357,13 @@ nav ul a {
   color: #1A315C;
 }
 
+.home-header .home,
+.blog-header .blog,
+.con-header .contact {
+  -webkit-text-decoration: underline solid #0CADC0 3px;
+          text-decoration: underline solid #0CADC0 3px;
+}
+
 .home-header {
   background-image: url("./textilee-assets/header-home.jpg");
   background-repeat: no-repeat;
@@ -371,6 +378,28 @@ nav ul a {
 .home-header img {
   position: absolute;
   bottom: -200px;
+}
+
+.blog-header {
+  background-image: url("./textilee-assets/blog-header.jpg");
+  background-repeat: no-repeat;
+}
+.blog-header .h1-blog-con {
+  color: #1A315C;
+  width: 50%;
+  margin-top: 50px;
+  height: 410px;
+}
+
+.con-header {
+  background-image: url("./textilee-assets/contact-header.jpg");
+  background-repeat: no-repeat;
+}
+.con-header .h1-blog-con {
+  color: #1A315C;
+  width: 50%;
+  margin-top: 100px;
+  height: 365px;
 }
 
 .learn {
@@ -542,41 +571,19 @@ nav ul a {
   padding: 10px 40px;
 }
 
-.blog-header {
-  background-image: url("./textilee-assets/blog-header.jpg");
-  background-repeat: no-repeat;
-}
-.blog-header .h1-blog-con {
-  color: #1A315C;
-  width: 50%;
-  margin-top: 50px;
-  height: 410px;
-}
-
-.con-header {
-  background-image: url("./textilee-assets/contact-header.jpg");
-  background-repeat: no-repeat;
-}
-.con-header .h1-blog-con {
-  color: #1A315C;
-  width: 50%;
-  margin-top: 100px;
-  height: 365px;
-}
-
-.contact {
+.touch {
   background-color: #CCEDFB;
   padding: 100px 0 150px 0;
 }
-.contact .info {
+.touch .info {
   width: 25%;
   margin-left: auto;
 }
-.contact .info i {
+.touch .info i {
   margin-right: 20px;
   font-size: 1.25rem;
 }
-.contact .info .address {
+.touch .info .address {
   margin-top: 20px;
 }
 
@@ -655,7 +662,7 @@ nav ul a {
   color: #161515;
   background-color: #c6d9fb;
   width: 100%;
-  padding-top: 10px;
+  padding: 10px 0;
   margin-top: 50px;
 }
 
