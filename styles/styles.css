@@ -272,7 +272,41 @@ nav {
   text-align: center;
 }
 
-p, .miss-post li {
+textarea::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+textarea::-moz-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+textarea:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+textarea::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+p,
+.miss-post li,
+label, textarea::placeholder {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -349,6 +383,40 @@ li a {
 
 section {
   padding: 100px 0;
+}
+
+form fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+form fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+}
+form fieldset div label {
+  padding-left: 20px;
+}
+form fieldset div .name, form fieldset div .email {
+  border: none;
+  border-bottom: 2px solid #0CADC0;
+}
+form textarea {
+  border: 2px solid #0CADC0;
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
 }
 
 nav {
@@ -446,6 +514,13 @@ nav ul a {
   color: #161515;
   background: #c6d9fb;
   padding: 10px 0;
+}
+
+.button.post-button,
+.button.submit-button {
+  border: none;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .learn {
@@ -647,50 +722,6 @@ nav ul a {
   padding-bottom: 10px;
 }
 
-.comment-form {
-  width: 65%;
-}
-.comment-form fieldset {
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0;
-}
-.comment-form fieldset div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 45%;
-}
-.comment-form fieldset div label {
-  padding-left: 20px;
-}
-.comment-form fieldset div .name, .comment-form fieldset div .email {
-  background-color: #CCEDFB;
-  border: none;
-  border-bottom: 2px solid #0CADC0;
-}
-.comment-form textarea {
-  background-color: #CCEDFB;
-  border: 2px solid #0CADC0;
-  width: 100%;
-  height: 200px;
-  margin-top: 50px;
-}
-.comment-form .post-button {
-  border: none;
-  width: 100%;
-  margin-top: 50px;
-}
-
 .blog-main {
   position: relative;
 }
@@ -727,6 +758,48 @@ nav ul a {
   padding: 5px 0;
 }
 
+.comment-form {
+  width: 65%;
+}
+.comment-form .name, .comment-form .email, .comment-form textarea {
+  background-color: #CCEDFB;
+}
+
+.contact-form {
+  background-color: #21404f;
+  -webkit-box-shadow: 20px 20px #0CADC0;
+          box-shadow: 20px 20px #0CADC0;
+  position: absolute;
+  width: 55%;
+  top: 450px;
+  left: 100px;
+  padding: 50px 0;
+}
+.contact-form label, .contact-form .name, .contact-form .email, .contact-form textarea {
+  background-color: #21404f;
+  color: #FFFFFF;
+}
+.contact-form textarea::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.contact-form textarea::-moz-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.contact-form textarea:-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.contact-form textarea::-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+.contact-form textarea::placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
 .methods {
   background-color: #CCEDFB;
   padding: 100px 0 150px 0;
@@ -741,80 +814,6 @@ nav ul a {
 }
 .methods .info .address {
   margin-top: 20px;
-}
-
-.contact-form {
-  background-color: #21404f;
-  -webkit-box-shadow: 20px 20px #0CADC0;
-          box-shadow: 20px 20px #0CADC0;
-  position: absolute;
-  width: 55%;
-  top: 450px;
-  left: 100px;
-  padding: 50px 0;
-}
-.contact-form fieldset {
-  border: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0;
-}
-.contact-form fieldset div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 45%;
-}
-.contact-form fieldset div label {
-  color: #FFFFFF;
-  padding-left: 20px;
-}
-.contact-form fieldset div .name, .contact-form fieldset div .email {
-  background-color: #21404f;
-  color: #FFFFFF;
-  border: none;
-  border-bottom: 2px solid #0CADC0;
-}
-.contact-form textarea {
-  background-color: #21404f;
-  color: #FFFFFF;
-  border: 2px solid #0CADC0;
-  width: 100%;
-  height: 200px;
-  margin-top: 50px;
-}
-.contact-form ::-webkit-input-placeholder {
-  color: #FFFFFF;
-  opacity: 1;
-}
-.contact-form ::-moz-placeholder {
-  color: #FFFFFF;
-  opacity: 1;
-}
-.contact-form :-ms-input-placeholder {
-  color: #FFFFFF;
-  opacity: 1;
-}
-.contact-form ::-ms-input-placeholder {
-  color: #FFFFFF;
-  opacity: 1;
-}
-.contact-form ::placeholder {
-  color: #FFFFFF;
-  opacity: 1;
-}
-.contact-form .submit-button {
-  border: none;
-  width: 100%;
-  margin-top: 50px;
 }
 
 footer {

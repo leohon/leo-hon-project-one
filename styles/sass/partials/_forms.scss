@@ -1,0 +1,29 @@
+@use './variables';
+
+.comment-form {
+  width: 65%;
+
+  .name, .email, textarea {
+    background-color: variables.$sky-blue;
+  }
+}
+
+.contact-form {
+  background-color: variables.$blue-dianne;
+  box-shadow: 20px 20px variables.$turquoise;
+  position: absolute;
+  width: 55%;
+  top: 450px;
+  left: 100px;
+  padding: 50px 0;
+
+  label, .name, .email, textarea {
+    background-color: variables.$blue-dianne;
+    color: variables.$white;
+  }
+
+  textarea::placeholder {
+    color: variables.$white;
+    opacity: 1;
+  }
+}
