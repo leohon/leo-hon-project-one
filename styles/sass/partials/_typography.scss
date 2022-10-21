@@ -28,7 +28,9 @@ nav {
   text-align: center;
 }
 
-p, .miss-post li {
+p, 
+.miss-post li, 
+label, textarea::placeholder {
   @include font(variables.$lato, 400, 1rem, 1.4rem, 0.1rem);
 }
 
