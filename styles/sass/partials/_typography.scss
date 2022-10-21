@@ -1,76 +1,59 @@
 @use './variables';
 
+// Mixins
+@mixin font($family, $weight, $size, $line, $letter) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+  letter-spacing: $letter;
+}
+
 // General
 html {
   font-size: 125%;
 }
 
 .logo {
-  font-family: variables.$pacifico;
-  font-size: 1.5rem;
-  line-height: 1.2rem;
-  letter-spacing: 0.09rem;
+  @include font(variables.$pacifico, 400, 1.5rem, 1.2rem, 0.09rem);
 }
 
 .button {
-  font-family: variables.$pacifico;
-  font-size: 1.35rem;
+  @include font(variables.$pacifico, 400, 1.35rem, 1.6rem, 0.07rem);
   text-align: center;
-  line-height: 1.6rem;
-  letter-spacing: 0.07rem;
 }
 
 nav {
-  font-family: variables.$lato;
-  font-weight: 700;
+  @include font(variables.$lato, 700, 1rem, 1.45rem, 0.07rem);
   text-align: center;
-  line-height: 1.45rem;
-  letter-spacing: 0.07rem;
 }
 
-p {
-  font-family: variables.$lato;
-  font-weight: 400;
-  line-height: 1.4rem;
-  letter-spacing: 0.1rem;
+p, .miss-post li {
+  @include font(variables.$lato, 400, 1rem, 1.4rem, 0.1rem);
 }
 
 // Home
 .h1-home {
-  font-family: variables.$pacifico;
-  font-size: 2.9rem;
-  line-height: 3.4rem;
+  @include font(variables.$pacifico, 400, 2.9rem, 3.4rem, 0);
 }
 .h2-home {
-  font-family: variables.$pacifico;
-  font-size: 2.15rem;
-  line-height: 2.9rem;
-  letter-spacing: 0.14rem;
+  @include font(variables.$pacifico, 400, 2.15rem, 2.9rem, 0.14rem);
 }
 .h3-home {
-  font-family: variables.$pacifico;
-  font-size: 2rem;
+  @include font(variables.$pacifico, 400, 2rem, 2.9rem, 0.13rem);
   text-align: right;
-  line-height: 2.9rem;
-  letter-spacing: 0.13rem;
 }
 
 // Contact
 .h1-blog-con {
-  font-family: variables.$pacifico;
-  font-size: 3.4rem;
-  line-height: 3.2rem;
+  @include font(variables.$pacifico, 400, 3.4rem, 3.2rem, 0);
 }
 
 // Blog
 .h2-blog {
-  font-family: variables.$pacifico;
-  font-size: 2rem;
-  line-height: 2.12rem;
+  @include font(variables.$pacifico, 400, 2rem, 2.12rem, 0);
 }
 
 .h3-blog {
-  font-family: variables.$pacifico;
-  font-size: 1.75rem;
-  letter-spacing: 0.15rem;
+  @include font(variables.$pacifico, 400, 1.75rem, 1rem, 0.15rem);
 }

@@ -1,17 +1,25 @@
 @use './variables';
 
+// Mixins
+@mixin bg-img($image) {
+  background-image: url($image);
+  background-repeat: no-repeat;
+}
+
+@mixin title($h-value, $top) {
+  color: variables.$slate-blue;
+  width: 50%;
+  margin-top: $top;
+  height: $h-value;
+}
+
 // Index
 .home-header {
-  background-image: url('./textilee-assets/header-home.jpg');
-  background-repeat: no-repeat;
-  // background-size: contain;
+  @include bg-img('./textilee-assets/header-home.jpg');
   position: relative;
 
   .h1-home {
-    color: variables.$slate-blue;
-    width: 50%;
-    margin-top: 50px;
-    height: 595px;
+    @include title(595px, 50px);
   }
 
   img {
@@ -22,26 +30,18 @@
 
 // Blog
 .blog-header {
-  background-image: url('./textilee-assets/blog-header.jpg');
-  background-repeat: no-repeat;
+  @include bg-img('./textilee-assets/blog-header.jpg');
 
   .h1-blog-con {
-    color: variables.$slate-blue;
-    width: 50%;
-    margin-top: 50px;
-    height: 410px;
+    @include title(410px, 50px);
   }
 }
 
 // Contact
 .con-header {
-  background-image: url('./textilee-assets/contact-header.jpg');
-  background-repeat: no-repeat;
+  @include bg-img('./textilee-assets/contact-header.jpg');
 
   .h1-blog-con {
-    color: variables.$slate-blue;
-    width: 50%;
-    margin-top: 100px;
-    height: 365px;
+    @include title(365px, 100px);
   }
 }
