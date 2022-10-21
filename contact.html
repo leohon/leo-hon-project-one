@@ -17,11 +17,11 @@
 
   <!-- Header -->
   <header class="con-header">
-    <!-- contact-header background -->
     <div class="wrapper">
       <nav>
         <p class="logo">Textilee</p>
 
+        <!-- Menu -->
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="#">About</a></li>
@@ -36,9 +36,11 @@
 
   <!-- Main -->
   <main id="main">
-    <section class="touch">
+    <!-- Methods to 'Get in touch' -->
+    <section class="methods">
       <div class="wrapper">
         <div class="info">
+          <!-- Icons -->
           <div class="icons">
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -46,6 +48,7 @@
             <i class="fa-brands fa-whatsapp"></i>
           </div>
 
+          <!-- Address -->
           <div class="address">
             <p>info@email.com</p>
             <p><br></p>
@@ -59,26 +62,27 @@
       </div>
     </section>
 
+    <!-- Form Section -->
     <section class="form">
       <div class="wrapper">
+        <!-- Form -->
         <form action="#" method="#" class="message-form" name="message-form">
           <fieldset>
             <div>
               <label for="name">Name</label>
-              <input type="text" class="name" id="name" name="name">
+              <input type="text" class="name" id="name" name="name" required>
             </div>
             <div>
               <label for="email">Email address</label>
-              <input type="email" class="email" id="email" name="email">
+              <input type="email" class="email" id="email" name="email" required>
             </div>
           </fieldset>
           
-          <textarea class="message" id="message" name="message" placeholder="&#10   Message"></textarea>
+          <textarea class="message" id="message" name="message" placeholder="&#10   Message" required></textarea>
 
           <button type="submit" class="button submit-button">submit</button>
         </form>
       </div>
-      
     </section>
   </main>
 
