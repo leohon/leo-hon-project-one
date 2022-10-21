@@ -416,6 +416,38 @@ nav ul a {
   height: 365px;
 }
 
+.button.find-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #1A315C;
+  padding: 10px 40px;
+}
+
+.button.read-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #1A315C;
+  background: #c6d9fb;
+  padding: 10px 40px;
+}
+
+.button.post-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #1A315C;
+  padding: 10px 0;
+}
+
+.button.submit-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #161515;
+  background: #c6d9fb;
+  padding: 10px 0;
+}
+
 .learn {
   background-color: #CCEDFB;
   padding-top: 250px;
@@ -431,13 +463,6 @@ nav ul a {
 .learn .wrapper p {
   padding: 20px 0px 40px 0;
   margin-right: 140px;
-}
-.learn .wrapper .find-button {
-  display: inline-block;
-  text-decoration: none;
-  color: #FFFFFF;
-  background-color: #1A315C;
-  padding: 10px 40px;
 }
 .learn img {
   -webkit-box-shadow: -20px 20px #0CADC0;
@@ -509,13 +534,6 @@ nav ul a {
   color: #FFFFFF;
   margin-bottom: 15px;
 }
-.dis-locate .wrapper div .read-button {
-  display: inline-block;
-  text-decoration: none;
-  color: #1A315C;
-  background: #c6d9fb;
-  padding: 10px 40px;
-}
 .dis-locate .wrapper .img-left {
   position: absolute;
   top: -40px;
@@ -576,13 +594,6 @@ nav ul a {
   text-align: center;
   margin-bottom: 50px;
   width: 101%;
-}
-.search .find-button {
-  display: inline-block;
-  text-decoration: none;
-  color: #FFFFFF;
-  background-color: #1A315C;
-  padding: 10px 40px;
 }
 
 .collect {
@@ -674,14 +685,9 @@ nav ul a {
   height: 200px;
   margin-top: 50px;
 }
-.comment-form .submit-button {
-  display: inline-block;
-  text-decoration: none;
+.comment-form .post-button {
   border: none;
-  color: #FFFFFF;
-  background-color: #1A315C;
   width: 100%;
-  padding: 10px 0;
   margin-top: 50px;
 }
 
@@ -737,7 +743,7 @@ nav ul a {
   margin-top: 20px;
 }
 
-.form {
+.contact-form {
   background-color: #21404f;
   -webkit-box-shadow: 20px 20px #0CADC0;
           box-shadow: 20px 20px #0CADC0;
@@ -747,7 +753,7 @@ nav ul a {
   left: 100px;
   padding: 50px 0;
 }
-.form fieldset {
+.contact-form fieldset {
   border: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,7 +763,7 @@ nav ul a {
           justify-content: space-between;
   padding: 0;
 }
-.form fieldset div {
+.contact-form fieldset div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -767,17 +773,17 @@ nav ul a {
           flex-direction: column;
   width: 45%;
 }
-.form fieldset div label {
+.contact-form fieldset div label {
   color: #FFFFFF;
   padding-left: 20px;
 }
-.form fieldset div .name, .form fieldset div .email {
+.contact-form fieldset div .name, .contact-form fieldset div .email {
   background-color: #21404f;
   color: #FFFFFF;
   border: none;
   border-bottom: 2px solid #0CADC0;
 }
-.form textarea {
+.contact-form textarea {
   background-color: #21404f;
   color: #FFFFFF;
   border: 2px solid #0CADC0;
@@ -785,34 +791,29 @@ nav ul a {
   height: 200px;
   margin-top: 50px;
 }
-.form ::-webkit-input-placeholder {
+.contact-form ::-webkit-input-placeholder {
   color: #FFFFFF;
   opacity: 1;
 }
-.form ::-moz-placeholder {
+.contact-form ::-moz-placeholder {
   color: #FFFFFF;
   opacity: 1;
 }
-.form :-ms-input-placeholder {
+.contact-form :-ms-input-placeholder {
   color: #FFFFFF;
   opacity: 1;
 }
-.form ::-ms-input-placeholder {
+.contact-form ::-ms-input-placeholder {
   color: #FFFFFF;
   opacity: 1;
 }
-.form ::placeholder {
+.contact-form ::placeholder {
   color: #FFFFFF;
   opacity: 1;
 }
-.form .submit-button {
-  display: inline-block;
-  text-decoration: none;
+.contact-form .submit-button {
   border: none;
-  color: #161515;
-  background-color: #c6d9fb;
   width: 100%;
-  padding: 10px 0;
   margin-top: 50px;
 }
 

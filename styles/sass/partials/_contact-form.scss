@@ -1,6 +1,6 @@
 @use './variables';
 
-.form {
+.contact-form {
   background-color: variables.$blue-dianne;
   box-shadow: 20px 20px variables.$turquoise;
   position: absolute;
@@ -48,13 +48,8 @@
   }
 
   .submit-button {
-    display: inline-block;
-    text-decoration: none;
     border: none;
-    color: variables.$black-two;
-    background-color: variables.$hawkes-blue;
     width: 100%;
-    padding: 10px 0;
     margin-top: 50px;
-}
+  }
 }

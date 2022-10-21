@@ -1,0 +1,26 @@
+@use './variables';
+
+// Mixins
+@mixin button($display, $deco, $colour, $background, $pad) {
+  display: $display;
+  text-decoration: $deco;
+  color: $colour;
+  background: $background;
+  padding: $pad;
+}
+
+.button.find-button {
+  @include button(inline-block, none, variables.$white, variables.$slate-blue, 10px 40px);
+}
+
+.button.read-button {
+  @include button(inline-block, none, variables.$slate-blue, variables.$hawkes-blue, 10px 40px);
+}
+
+.button.post-button {
+  @include button(inline-block, none, variables.$white, variables.$slate-blue, 10px 0);
+}
+
+.button.submit-button {
+  @include button(inline-block, none, variables.$black-two, variables.$hawkes-blue, 10px 0);
+}
