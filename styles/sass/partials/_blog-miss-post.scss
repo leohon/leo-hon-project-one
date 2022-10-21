@@ -1,0 +1,43 @@
+@use './variables';
+
+.blog-main {
+  position: relative;
+}
+
+.miss-post {
+  background-color: variables.$blue-dianne;
+  color: variables.$white;
+  position: absolute;
+  width: 25%;
+  top: 100px;
+  right: 0;
+
+  .imgContainer {
+    position: relative;
+    height: 350px;
+
+    img {
+      position: absolute;
+      top: -70px;
+      right: 0;
+    }
+  }
+
+  div {
+    margin-top: 50px;
+    padding-bottom: 25px;
+
+    p {
+      padding-top: 5px;
+    }
+
+    li {
+      list-style: inside;
+      padding: 5px 0 ;
+      font-family: variables.$lato;
+      font-weight: 400;
+      line-height: 1.4rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+}

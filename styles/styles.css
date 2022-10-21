@@ -468,7 +468,7 @@ nav ul a {
   width: 55px;
   height: 55px;
   padding: 12px 0;
-  margin: 10px;
+  margin: 5px 10px 10px 10px;
 }
 .up-comm-blog-get .wrapper .ucbg-content h2 {
   color: #1A315C;
@@ -569,6 +569,143 @@ nav ul a {
   color: #FFFFFF;
   background-color: #1A315C;
   padding: 10px 40px;
+}
+
+.collect {
+  background-color: #21404f;
+  color: #FFFFFF;
+  border-right: 10px solid #0CADC0;
+  border-bottom: 10px solid #0CADC0;
+  width: 65%;
+}
+.collect .imgContainer {
+  height: 350px;
+  position: relative;
+}
+.collect .imgContainer img {
+  width: 99.45%;
+  -webkit-box-shadow: 15px 15px #0CADC0;
+          box-shadow: 15px 15px #0CADC0;
+  position: absolute;
+  top: -300px;
+}
+.collect h2 {
+  padding: 50px 0 0 90px;
+}
+.collect p {
+  padding: 25px 30px 0 90px;
+}
+.collect .date {
+  color: #CCEDFB;
+}
+
+.blog-main {
+  background-color: #CCEDFB;
+}
+
+.comments .single-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0 100px 0;
+}
+.comments .single-comment img {
+  width: 100px;
+  height: 100px;
+}
+.comments .single-comment .content {
+  padding-left: 35px;
+  width: 55%;
+}
+.comments .single-comment .content .date {
+  color: #1A315C;
+  padding-bottom: 10px;
+}
+
+.comment-form {
+  width: 65%;
+}
+.comment-form fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+.comment-form fieldset div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+}
+.comment-form fieldset div label {
+  padding-left: 20px;
+}
+.comment-form fieldset div .name, .comment-form fieldset div .email {
+  background-color: #CCEDFB;
+  border: none;
+  border-bottom: 2px solid #0CADC0;
+}
+.comment-form textarea {
+  background-color: #CCEDFB;
+  border: 2px solid #0CADC0;
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+}
+.comment-form .submit-button {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  color: #FFFFFF;
+  background-color: #1A315C;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+.blog-main {
+  position: relative;
+}
+
+.miss-post {
+  background-color: #21404f;
+  color: #FFFFFF;
+  position: absolute;
+  width: 25%;
+  top: 100px;
+  right: 0;
+}
+.miss-post .imgContainer {
+  position: relative;
+  height: 350px;
+}
+.miss-post .imgContainer img {
+  position: absolute;
+  top: -70px;
+  right: 0;
+}
+.miss-post div {
+  margin-top: 50px;
+  padding-bottom: 25px;
+}
+.miss-post div p {
+  padding-top: 5px;
+}
+.miss-post div li {
+  list-style: inside;
+  padding: 5px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
 }
 
 .touch {
