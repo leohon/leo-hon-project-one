@@ -454,8 +454,8 @@ nav ul a {
 .home-header .h1-home {
   color: #1A315C;
   width: 50%;
-  margin-top: 50px;
   height: 595px;
+  margin-top: 50px;
 }
 .home-header img {
   position: absolute;
@@ -465,23 +465,27 @@ nav ul a {
 .blog-header {
   background-image: url("./textilee-assets/blog-header.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #CCEDFB;
 }
 .blog-header .h1-blog-con {
   color: #1A315C;
   width: 50%;
-  margin-top: 50px;
   height: 410px;
+  margin-top: 50px;
 }
 
 .con-header {
   background-image: url("./textilee-assets/contact-header.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #CCEDFB;
 }
 .con-header .h1-blog-con {
   color: #1A315C;
   width: 50%;
-  margin-top: 100px;
   height: 365px;
+  margin-top: 100px;
 }
 
 .button.find-button {
@@ -802,7 +806,7 @@ nav ul a {
 
 .methods {
   background-color: #CCEDFB;
-  padding: 100px 0 150px 0;
+  padding: 50px 0 150px 0;
 }
 .methods .info {
   width: 25%;
@@ -821,4 +825,59 @@ footer {
   color: #FFFFFF;
   text-align: center;
   padding: 10px;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 100%;
+  }
+  nav ul a {
+    padding-left: 25px;
+  }
+  .con-header .h1-blog-con {
+    width: 100%;
+    height: 130px;
+    margin-top: 50px;
+  }
+  .methods .info i {
+    margin-right: 10px;
+  }
+  .contact-form {
+    -webkit-box-shadow: 10px 10px #0CADC0;
+            box-shadow: 10px 10px #0CADC0;
+    width: 65%;
+    top: 250px;
+    left: 0px;
+    padding: 25px 0;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 80%;
+  }
+  .con-header .h1-blog-con {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .methods {
+    padding: 25px 0;
+  }
+  .methods .info {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .methods .info i {
+    margin-right: 20px;
+  }
+  .contact-form {
+    position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 }

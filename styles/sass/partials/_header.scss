@@ -9,11 +9,11 @@
 @mixin title($h-value, $top) {
   color: variables.$slate-blue;
   width: 50%;
-  margin-top: $top;
   height: $h-value;
+  margin-top: $top;
 }
 
-// Index
+// Home
 .home-header {
   @include bg-img('./textilee-assets/header-home.jpg');
   position: relative;
@@ -31,6 +31,8 @@
 // Blog
 .blog-header {
   @include bg-img('./textilee-assets/blog-header.jpg');
+  background-size: contain;
+  background-color: variables.$sky-blue;
 
   .h1-blog-con {
     @include title(410px, 50px);
@@ -40,6 +42,8 @@
 // Contact
 .con-header {
   @include bg-img('./textilee-assets/contact-header.jpg');
+  background-size: contain;
+  background-color: variables.$sky-blue;
 
   .h1-blog-con {
     @include title(365px, 100px);
