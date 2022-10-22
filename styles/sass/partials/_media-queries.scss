@@ -2,7 +2,34 @@
 
 // Portrait tablet and small desktops
 @media (max-width: 1200px) {
+  // General
+  html {
+    font-size: 115%;
+  }
+
+  // Home
+
+
+  // Blog
+  .h3-blog {
+    line-height: 2rem;
+  }
   
+  .collect .imgContainer {
+    height: 150px;
+
+    img {
+      top: -400px;
+    }
+  }
+
+  .miss-post {
+    top: 75px;
+
+    .imgContainer {
+      height: 225px;
+    }
+  } 
 }
 
 // Landscape phone to portrait tablet
@@ -22,7 +49,19 @@
 
 
   // Blog
+  .collect,
+  .miss-post {
+    // position: inherit;
+  }
+  .collect {
+    .imgContainer {
+      height: 50px;
+    }
 
+    h2, p {
+      padding-left: 0;
+    }
+  }
 
   // Contact
   .con-header .h1-blog-con {
