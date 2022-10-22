@@ -15,13 +15,30 @@
     line-height: 2rem;
   }
   
-  .collect .imgContainer {
-    height: 150px;
-
-    img {
-      top: -400px;
-    }
+  .blog-header .h1-blog-con {
+    height: 300px;
   }
+
+  .collect {
+    padding-bottom: 25px;
+    padding-top: 0;
+
+    .imgContainer {
+      height: 300px;
+
+      img {
+        top: -200px;
+      }
+    } 
+
+    p {
+      padding-left: 45px;
+    }
+
+    h2 {
+      padding: 10px 0 0 45px;
+    }
+  } 
 
   .miss-post {
     top: 75px;
@@ -30,6 +47,13 @@
       height: 225px;
     }
   } 
+}
+
+// For adjusting collection section
+@media (max-width: 1000px) {
+  .collect .imgContainer {
+    height: 250px;
+  }
 }
 
 // Landscape phone to portrait tablet
@@ -49,18 +73,47 @@
 
 
   // Blog
+  .blog-header .h1-blog-con {
+    height: 200px;
+    margin-top: 25px;
+  }
   .collect,
   .miss-post {
     // position: inherit;
   }
   .collect {
     .imgContainer {
-      height: 50px;
+      height: 250px;
+
+      img {
+        top: -100px;
+      }
     }
 
     h2, p {
       padding-left: 0;
     }
+  }
+
+  .miss-post .imgContainer{
+    height: 100px;
+  }
+
+  .comments .single-comment {
+    padding-bottom: 50px;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .content {
+      width: 100%;
+    }
+  }
+
+  .comment-form {
+    width: 100%;
   }
 
   // Contact
@@ -94,7 +147,31 @@
 
 
   // Blog
+  .blog-header .h1-blog-con {
+    width: 100%;
+    // height: 100px;
+    margin-top: 10px;
+    text-align: center;
+  }
 
+  .comments .single-comment {
+    padding-bottom: 25px;
+  }
+
+  .comment-form {
+    fieldset {
+      display: block;
+
+      div {
+        padding-bottom: 25px;
+        width: 100%;
+      }
+    }
+
+    textarea {
+      margin-top: 25px;
+    }
+  }
 
   // Contact
   .con-header .h1-blog-con {
