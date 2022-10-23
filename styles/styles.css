@@ -931,6 +931,9 @@ footer {
   .collect .imgContainer {
     height: 250px;
   }
+  .miss-post .imgContainer {
+    height: 150px;
+  }
 }
 @media (max-width: 800px) {
   html {
@@ -995,7 +998,7 @@ footer {
     padding-left: 0;
   }
   .miss-post .imgContainer {
-    height: 100px;
+    height: 125px;
   }
   .comments {
     padding: 75px 0;
@@ -1028,6 +1031,16 @@ footer {
     top: 250px;
     left: 0px;
     padding: 25px 0;
+  }
+  .contact-form fieldset {
+    display: block;
+  }
+  .contact-form fieldset div {
+    padding-bottom: 25px;
+    width: 100%;
+  }
+  .contact-form textarea {
+    margin-top: 25px;
   }
 }
 @media (max-width: 500px) {
@@ -1135,12 +1148,12 @@ footer {
   .methods {
     padding: 25px 0;
   }
-  .methods r .info {
+  .methods .info {
     margin: 0;
     width: 100%;
     text-align: center;
   }
-  .methods r .info i {
+  .methods .info i {
     margin-right: 20px;
   }
   .contact-form {

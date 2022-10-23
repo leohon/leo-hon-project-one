@@ -117,6 +117,10 @@
   .collect .imgContainer {
     height: 250px;
   }
+
+  .miss-post .imgContainer {
+    height: 150px;
+  }
 }
 
 // Landscape phone to portrait tablet
@@ -209,7 +213,7 @@
   }
 
   .miss-post .imgContainer{
-    height: 100px;
+    height: 125px;
   }
 
   .comments {
@@ -250,6 +254,19 @@
     top: 250px;
     left: 0px;
     padding: 25px 0;
+
+    fieldset {
+      display: block;
+
+      div {
+        padding-bottom: 25px;
+        width: 100%;
+      }
+    }
+
+    textarea {
+      margin-top: 25px;
+    }
   }
 }
 
@@ -389,7 +406,7 @@
   }
 
   .methods {
-    padding: 25px 0;r
+    padding: 25px 0;
 
     .info {
       margin: 0;
