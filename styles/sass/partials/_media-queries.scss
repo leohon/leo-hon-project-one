@@ -170,7 +170,7 @@
 
     .img-left,
     .img-right {
-      position: inherit;
+      position: relative;
       width: 100%;
       box-shadow: none;
     }
@@ -193,10 +193,7 @@
     height: 200px;
     margin-top: 25px;
   }
-  .collect,
-  .miss-post {
-    // position: inherit;
-  }
+
   .collect {
     .imgContainer {
       height: 250px;
@@ -262,25 +259,60 @@
   html {
     font-size: 80%;
   }
+  section {
+    padding: 50px 0;
+  }
+  nav ul a {
+    padding-left: 10px;
+  }
 
   // Home
-  .home-header .h1-home {
-    height: 140px;
+  .home-header {
+    nav ul a {
+      background-color: #f5f5f5;
+    }
+    
+    .h1-home {
+      height: 140px;
+    }
   }
 
   .learn .img-container {
     display: none;
   }
 
-  .gallery {
-    padding: 50px 0;
-    
-    ul {
-      display: inherit;
+  .gallery ul {
+    display: block;
 
-      li {
-        padding-bottom: 20px;
+    li {
+      padding-bottom: 20px;
+    }
+  }
+
+  .up-comm-blog-get .wrapper {
+    display: block;
+
+    .ucbg-content {
+      width: 100%;
+      padding-bottom: 25px;
+
+      i {
+        width: 35px;
+        height: 35px;
+        padding: 7px 0;
       }
+    }
+  }
+
+  .dis-locate .wrapper{
+    display: block;
+
+    .img-left, .img-right {
+      display: none;
+    }
+
+    .discover, .location {
+      width: 100%;
     }
   }
 
@@ -329,13 +361,9 @@
     }
   }
 
-  .comments {
-    padding: 50px 0;
-
-    .single-comment {
+  .comments .single-comment {
       padding-bottom: 25px;
     }
-  }
 
   .comment-form {
     fieldset {
@@ -361,7 +389,7 @@
   }
 
   .methods {
-    padding: 25px 0;
+    padding: 25px 0;r
 
     .info {
       margin: 0;

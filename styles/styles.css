@@ -966,7 +966,7 @@ footer {
   }
   .dis-locate .wrapper .img-left,
 .dis-locate .wrapper .img-right {
-    position: inherit;
+    position: relative;
     width: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -1034,20 +1034,47 @@ footer {
   html {
     font-size: 80%;
   }
+  section {
+    padding: 50px 0;
+  }
+  nav ul a {
+    padding-left: 10px;
+  }
+  .home-header nav ul a {
+    background-color: #f5f5f5;
+  }
   .home-header .h1-home {
     height: 140px;
   }
   .learn .img-container {
     display: none;
   }
-  .gallery {
-    padding: 50px 0;
-  }
   .gallery ul {
-    display: inherit;
+    display: block;
   }
   .gallery ul li {
     padding-bottom: 20px;
+  }
+  .up-comm-blog-get .wrapper {
+    display: block;
+  }
+  .up-comm-blog-get .wrapper .ucbg-content {
+    width: 100%;
+    padding-bottom: 25px;
+  }
+  .up-comm-blog-get .wrapper .ucbg-content i {
+    width: 35px;
+    height: 35px;
+    padding: 7px 0;
+  }
+  .dis-locate .wrapper {
+    display: block;
+  }
+  .dis-locate .wrapper .img-left, .dis-locate .wrapper .img-right {
+    display: none;
+  }
+  .dis-locate .wrapper .discover, .dis-locate .wrapper .location {
+    width: 100%;
   }
   .blog-header .h1-blog-con {
     width: 100%;
@@ -1086,9 +1113,6 @@ footer {
   .collect p {
     padding-right: 0px;
   }
-  .comments {
-    padding: 50px 0;
-  }
   .comments .single-comment {
     padding-bottom: 25px;
   }
@@ -1111,12 +1135,12 @@ footer {
   .methods {
     padding: 25px 0;
   }
-  .methods .info {
+  .methods r .info {
     margin: 0;
     width: 100%;
     text-align: center;
   }
-  .methods .info i {
+  .methods r .info i {
     margin-right: 20px;
   }
   .contact-form {
