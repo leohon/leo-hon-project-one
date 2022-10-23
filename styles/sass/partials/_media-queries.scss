@@ -8,7 +8,35 @@
   }
 
   // Home
+  .home-header {
+    .h1-home {
+      height: 425px;
+    }
 
+    img {
+      width: 700px;
+      bottom: -200px;
+    }
+  }
+
+  .gallery li {
+    padding: 0 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .dis-locate {
+    padding: 75px 0;
+
+    .wrapper .discover {
+      padding-left: 50px;
+    }
+    .wrapper .location {
+      padding-right: 50px;
+    }
+  }
 
   // Blog
   .h3-blog {
@@ -49,8 +77,43 @@
   } 
 }
 
-// For adjusting collection section
+// For adjusting some sections
 @media (max-width: 1000px) {
+  // Home
+  .home-header img {
+    width: 550px;
+    bottom: -100px;
+  }
+
+  .learn {
+    padding-top: 125px;
+  }
+
+  .dis-locate .wrapper {
+    .discover {
+      padding-left: 25px;
+      margin-bottom: 25px;
+
+      h3 {
+        white-space: inherit;
+      }
+    }
+    .location {
+      padding-right: 25px;
+      margin-top: 25px;
+    }
+
+    .img-left {
+      top: 0px;
+      box-shadow: 15px 15px #0CADC0;
+    }
+    .img-right {
+      bottom: 0px;
+      box-shadow: -15px 15px #0CADC0;
+    }
+  }
+
+  // Blog
   .collect .imgContainer {
     height: 250px;
   }
@@ -70,7 +133,60 @@
   }
 
   // Home
+  .home-header {
+    .h1-home {
+      margin-top: 0;
+      width: 65%;
+      height: 275px;
+    }
 
+    img {
+      display: none;
+    }
+  }
+
+  .learn {
+    padding-top: 50px;
+
+    img {
+      width: 200px;
+    }
+
+    p {
+      width: 95%;
+    }
+  }
+
+  .up-comm-blog-get .wrapper .ucbg-content i {
+    width: 45px;
+    height: 45px;
+    padding: 10px 0;
+  }
+
+  .dis-locate .wrapper {
+    .img-container {
+      width: 35%; 
+    }
+
+    .img-left,
+    .img-right {
+      position: inherit;
+      width: 100%;
+      box-shadow: none;
+    }
+    .discover,
+    .location {
+      width: 65%;
+    }
+  }
+
+  .rope-img {
+    height: 0;
+  }
+
+  .search {
+    padding: 50px 0;
+  }
 
   // Blog
   .blog-header .h1-blog-con {
@@ -148,7 +264,25 @@
   }
 
   // Home
+  .home-header .h1-home {
+    height: 140px;
+  }
 
+  .learn .img-container {
+    display: none;
+  }
+
+  .gallery {
+    padding: 50px 0;
+    
+    ul {
+      display: inherit;
+
+      li {
+        padding-bottom: 20px;
+      }
+    }
+  }
 
   // Blog
   .blog-header .h1-blog-con {

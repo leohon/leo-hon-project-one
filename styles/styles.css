@@ -449,6 +449,8 @@ nav ul a {
 .home-header {
   background-image: url("./textilee-assets/header-home.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #CCEDFB;
   position: relative;
 }
 .home-header .h1-home {
@@ -559,6 +561,9 @@ nav ul a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.gallery ul img {
+  width: 100%;
+}
 
 .up-comm-blog-get {
   background-color: #CCEDFB;
@@ -619,6 +624,7 @@ nav ul a {
   left: 0;
   -webkit-box-shadow: 25px 25px #0CADC0;
           box-shadow: 25px 25px #0CADC0;
+  width: 45vw;
 }
 .dis-locate .wrapper .img-right {
   position: absolute;
@@ -626,6 +632,7 @@ nav ul a {
   right: 0;
   -webkit-box-shadow: -25px 25px #0CADC0;
           box-shadow: -25px 25px #0CADC0;
+  width: 45vw;
 }
 .dis-locate .wrapper .discover {
   padding-left: 100px;
@@ -841,6 +848,28 @@ footer {
   html {
     font-size: 115%;
   }
+  .home-header .h1-home {
+    height: 425px;
+  }
+  .home-header img {
+    width: 700px;
+    bottom: -200px;
+  }
+  .gallery li {
+    padding: 0 10px;
+  }
+  .gallery li img {
+    width: 100%;
+  }
+  .dis-locate {
+    padding: 75px 0;
+  }
+  .dis-locate .wrapper .discover {
+    padding-left: 50px;
+  }
+  .dis-locate .wrapper .location {
+    padding-right: 50px;
+  }
   .h3-blog {
     line-height: 2rem;
   }
@@ -871,6 +900,34 @@ footer {
   }
 }
 @media (max-width: 1000px) {
+  .home-header img {
+    width: 550px;
+    bottom: -100px;
+  }
+  .learn {
+    padding-top: 125px;
+  }
+  .dis-locate .wrapper .discover {
+    padding-left: 25px;
+    margin-bottom: 25px;
+  }
+  .dis-locate .wrapper .discover h3 {
+    white-space: inherit;
+  }
+  .dis-locate .wrapper .location {
+    padding-right: 25px;
+    margin-top: 25px;
+  }
+  .dis-locate .wrapper .img-left {
+    top: 0px;
+    -webkit-box-shadow: 15px 15px #0CADC0;
+            box-shadow: 15px 15px #0CADC0;
+  }
+  .dis-locate .wrapper .img-right {
+    bottom: 0px;
+    -webkit-box-shadow: -15px 15px #0CADC0;
+            box-shadow: -15px 15px #0CADC0;
+  }
   .collect .imgContainer {
     height: 250px;
   }
@@ -881,6 +938,48 @@ footer {
   }
   nav ul a {
     padding-left: 25px;
+  }
+  .home-header .h1-home {
+    margin-top: 0;
+    width: 65%;
+    height: 275px;
+  }
+  .home-header img {
+    display: none;
+  }
+  .learn {
+    padding-top: 50px;
+  }
+  .learn img {
+    width: 200px;
+  }
+  .learn p {
+    width: 95%;
+  }
+  .up-comm-blog-get .wrapper .ucbg-content i {
+    width: 45px;
+    height: 45px;
+    padding: 10px 0;
+  }
+  .dis-locate .wrapper .img-container {
+    width: 35%;
+  }
+  .dis-locate .wrapper .img-left,
+.dis-locate .wrapper .img-right {
+    position: inherit;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .dis-locate .wrapper .discover,
+.dis-locate .wrapper .location {
+    width: 65%;
+  }
+  .rope-img {
+    height: 0;
+  }
+  .search {
+    padding: 50px 0;
   }
   .blog-header .h1-blog-con {
     height: 200px;
@@ -934,6 +1033,21 @@ footer {
 @media (max-width: 500px) {
   html {
     font-size: 80%;
+  }
+  .home-header .h1-home {
+    height: 140px;
+  }
+  .learn .img-container {
+    display: none;
+  }
+  .gallery {
+    padding: 50px 0;
+  }
+  .gallery ul {
+    display: inherit;
+  }
+  .gallery ul li {
+    padding-bottom: 20px;
   }
   .blog-header .h1-blog-con {
     width: 100%;

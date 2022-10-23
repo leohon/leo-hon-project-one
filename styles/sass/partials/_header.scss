@@ -4,6 +4,8 @@
 @mixin bg-img($image) {
   background-image: url($image);
   background-repeat: no-repeat;
+  background-size: contain;
+  background-color: variables.$sky-blue;
 }
 
 @mixin title($h-value, $top) {
@@ -31,8 +33,6 @@
 // Blog
 .blog-header {
   @include bg-img('./textilee-assets/blog-header.jpg');
-  background-size: contain;
-  background-color: variables.$sky-blue;
 
   .h1-blog-con {
     @include title(410px, 50px);
@@ -42,8 +42,6 @@
 // Contact
 .con-header {
   @include bg-img('./textilee-assets/contact-header.jpg');
-  background-size: contain;
-  background-color: variables.$sky-blue;
 
   .h1-blog-con {
     @include title(365px, 100px);
