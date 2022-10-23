@@ -512,6 +512,9 @@ nav ul a {
   color: #FFFFFF;
   background: #1A315C;
   padding: 10px 0;
+  border: none;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .button.submit-button {
@@ -520,10 +523,6 @@ nav ul a {
   color: #161515;
   background: #c6d9fb;
   padding: 10px 0;
-}
-
-.button.post-button,
-.button.submit-button {
   border: none;
   width: 100%;
   margin-top: 50px;

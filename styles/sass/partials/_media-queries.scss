@@ -77,6 +77,8 @@
   } 
 }
 
+// --------------------------------------------------
+
 // For adjusting some sections
 @media (max-width: 1000px) {
   // Home
@@ -123,6 +125,8 @@
   }
 }
 
+// --------------------------------------------------
+
 // Landscape phone to portrait tablet
 @media (max-width: 800px) {
   // General
@@ -130,10 +134,8 @@
     font-size: 100%;
   }
 
-  nav {
-    ul a {
-      padding-left: 25px;
-    }
+  nav ul a {
+    padding-left: 25px;
   }
 
   // Home
@@ -269,6 +271,8 @@
     }
   }
 }
+
+// --------------------------------------------------
 
 // Landscape phones and down
 @media (max-width: 500px) {

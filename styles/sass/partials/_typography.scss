@@ -38,9 +38,11 @@ label, textarea::placeholder {
 .h1-home {
   @include font(variables.$pacifico, 400, 2.9rem, 3.4rem, 0);
 }
+
 .h2-home {
   @include font(variables.$pacifico, 400, 2.15rem, 2.9rem, 0.14rem);
 }
+
 .h3-home {
   @include font(variables.$pacifico, 400, 2rem, 2.9rem, 0.13rem);
   text-align: right;
