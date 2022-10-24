@@ -619,19 +619,19 @@ nav ul a {
 }
 .dis-locate .wrapper .img-left {
   position: absolute;
+  width: 45vw;
   top: -40px;
   left: 0;
   -webkit-box-shadow: 25px 25px #0CADC0;
           box-shadow: 25px 25px #0CADC0;
-  width: 45vw;
 }
 .dis-locate .wrapper .img-right {
   position: absolute;
+  width: 45vw;
   bottom: -40px;
   right: 0;
   -webkit-box-shadow: -25px 25px #0CADC0;
           box-shadow: -25px 25px #0CADC0;
-  width: 45vw;
 }
 .dis-locate .wrapper .discover {
   padding-left: 100px;
@@ -670,13 +670,11 @@ nav ul a {
 .search .wrapper {
   text-align: center;
 }
-.search h2 {
-  text-align: center;
+.search .wrapper h2 {
   margin-bottom: 20px;
   color: #1A315C;
 }
-.search p {
-  text-align: center;
+.search .wrapper p {
   margin-bottom: 50px;
   width: 101%;
 }

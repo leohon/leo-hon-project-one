@@ -19,17 +19,17 @@
 
     .img-left {
       position: absolute;
+      width: 45vw;
       top: -40px;
       left: 0;
       box-shadow: 25px 25px variables.$turquoise;
-      width: 45vw;
     }
     .img-right {
       position: absolute;
+      width: 45vw;
       bottom: -40px;
       right: 0;
       box-shadow: -25px 25px variables.$turquoise;
-      width: 45vw;
     }
 
     .discover {

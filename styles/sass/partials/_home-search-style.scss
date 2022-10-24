@@ -6,17 +6,15 @@
 
   .wrapper {
     text-align: center;
-  }
+    
+    h2 {
+      margin-bottom: 20px;
+      color: variables.$slate-blue;
+    }
 
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: variables.$slate-blue;
-  }
-
-  p {
-    text-align: center;
-    margin-bottom: 50px;
-    width: 101%;
+    p {
+      margin-bottom: 50px;
+      width: 101%;
+    }
   }
 }

@@ -1,6 +1,6 @@
 @use './variables';
 
-// Mixins
+// Mixin
 @mixin button($display, $deco, $colour, $background, $pad) {
   display: $display;
   text-decoration: $deco;
@@ -9,6 +9,7 @@
   padding: $pad;
 }
 
+// buttons css
 .button.find-button {
   @include button(inline-block, none, variables.$white, variables.$slate-blue, 10px 40px);
 }
