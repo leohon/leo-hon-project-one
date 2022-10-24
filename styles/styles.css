@@ -640,9 +640,6 @@ nav ul a {
 .dis-locate .wrapper .discover .dis {
   text-align: left;
 }
-.dis-locate .wrapper .discover h3 {
-  white-space: nowrap;
-}
 .dis-locate .wrapper .discover p {
   width: 95%;
 }
@@ -907,9 +904,6 @@ footer {
   .dis-locate .wrapper .discover {
     padding-left: 25px;
     margin-bottom: 25px;
-  }
-  .dis-locate .wrapper .discover h3 {
-    white-space: inherit;
   }
   .dis-locate .wrapper .location {
     padding-right: 25px;
