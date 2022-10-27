@@ -9,7 +9,7 @@ nav {
     display: flex;
 
     a {
-      padding-left: 50px;
+      margin-left: 50px;
       text-transform: uppercase;
       color: variables.$slate-blue;
     }
@@ -20,5 +20,6 @@ nav {
 .about-header .about,
 .blog-header .blog,
 .con-header .contact {
-  text-decoration: underline solid variables.$turquoise 3px;
+  // text-decoration: underline solid variables.$turquoise 3px;
+  border-bottom: 3px solid variables.$turquoise;
 }

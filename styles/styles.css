@@ -434,7 +434,7 @@ nav ul {
   display: flex;
 }
 nav ul a {
-  padding-left: 50px;
+  margin-left: 50px;
   text-transform: uppercase;
   color: #1A315C;
 }
@@ -443,8 +443,7 @@ nav ul a {
 .about-header .about,
 .blog-header .blog,
 .con-header .contact {
-  -webkit-text-decoration: underline solid #0CADC0 3px;
-          text-decoration: underline solid #0CADC0 3px;
+  border-bottom: 3px solid #0CADC0;
 }
 
 .home-header {
@@ -774,6 +773,7 @@ nav ul a {
 .comment-form textarea {
   background-color: #CCEDFB;
   padding: 25px 0 0 25px;
+  resize: none;
 }
 
 .contact-form {
@@ -794,6 +794,7 @@ nav ul a {
   background-color: #21404f;
   color: #FFFFFF;
   padding: 25px 0 0 25px;
+  resize: none;
 }
 .contact-form ::-webkit-input-placeholder {
   color: #FFFFFF;
@@ -1012,6 +1013,9 @@ footer {
     width: 100%;
     height: 130px;
     margin-top: 50px;
+  }
+  .methods {
+    padding: 50px 0 250px 0;
   }
   .methods .info i {
     margin-right: 10px;
