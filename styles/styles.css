@@ -440,6 +440,7 @@ nav ul a {
 }
 
 .home-header .home,
+.about-header .about,
 .blog-header .blog,
 .con-header .contact {
   -webkit-text-decoration: underline solid #0CADC0 3px;
