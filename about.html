@@ -62,17 +62,17 @@
     });
 
     const message = function(press) {
-      if (press % 5 == 0) {
-        paragraphEl.textContent = "Page STILL under maintenance";
+      if (press % 6 == 0) {
+        paragraphEl.innerHTML = "Page STILL under maintenance";
       }
-      else if (press % 5 == 1) {
-        paragraphEl.textContent = "ALMOST DONE";
+      else if (press % 6 == 1) {
+        paragraphEl.innerHTML = "ALMOST DONE";
       }
-      else if (press % 5 == 2) {
-        paragraphEl.textContent = "98% COMPLETE";
+      else if (press % 6 == 2) {
+        paragraphEl.innerHTML = "98% COMPLETE";
       }
       else {
-        paragraphEl.textContent = "99% COMPLETE";
+        paragraphEl.innerHTML = "99% COMPLETE";
       }
     }
   </script>
