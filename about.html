@@ -42,9 +42,10 @@
     </div>
   </main>
 
-  <!-- Create popup when page refresh saying "under maintenance" (or something similar)-->
+  
+  <!-- JavaScript -->
   <script>
-    // Grab button and paragraph element
+    // Create popup when page refresh saying "under maintenance" (or something similar)
     const buttonEl = document.querySelector('button');
     const paragraphEl = document.querySelector('.content');
     let press = 0;
@@ -62,20 +63,17 @@
 
     const message = function(press) {
       if (press % 5 == 0) {
-          paragraphEl.textContent = "Page STILL under maintenance";
-        }
-        else if (press % 5 == 1) {
-          paragraphEl.textContent = "ALMOST DONE";
-        }
-        else if (press % 5 == 2) {
-          paragraphEl.textContent = "98% COMPLETE";
-        }
-        else if (press % 5 == 3) {
-          paragraphEl.textContent = "99% COMPLETE";
-        }
-        else {
-          paragraphEl.textContent = "99% COMPLETE";
-        }
+        paragraphEl.textContent = "Page STILL under maintenance";
+      }
+      else if (press % 5 == 1) {
+        paragraphEl.textContent = "ALMOST DONE";
+      }
+      else if (press % 5 == 2) {
+        paragraphEl.textContent = "98% COMPLETE";
+      }
+      else {
+        paragraphEl.textContent = "99% COMPLETE";
+      }
     }
   </script>
 </body>
