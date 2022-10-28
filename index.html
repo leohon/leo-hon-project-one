@@ -60,9 +60,9 @@
     <section class="gallery">
       <div class="wrapper">
         <ul>
-          <li><img src="./styles/textilee-assets/gallery-image-1.jpg" alt="a spool of yarn and two balls of yarn" class="image"></li>
-          <li><img src="./styles/textilee-assets/gallery-image-2.jpg" alt="a pair of scissors, one large and one small spool of string, and unwound measuring tape on some fabric" class="image"></li>
-          <li><img src="./styles/textilee-assets/gallery-image-3.jpg" alt="a wooden shelf with spools of ribbons" class="image"></li>
+          <li><img src="./styles/textilee-assets/gallery-image-1.jpg" alt="a spool of yarn and two balls of yarn" class="image1"></li>
+          <li><img src="./styles/textilee-assets/gallery-image-2.jpg" alt="a pair of scissors, one large and one small spool of string, and unwound measuring tape on some fabric" class="image2"></li>
+          <li><img src="./styles/textilee-assets/gallery-image-3.jpg" alt="a wooden shelf with spools of ribbons" class="image3"></li>
         </ul>
       </div>
     </section>
@@ -165,19 +165,31 @@
 
   <!-- JavaScript -->
   <script>
-    // Adding a pop-up modal (on page load, or for images, etc)
-    // >>zoom in on mouseover - width increase?
-    const imageEl = document.getElementsByClassName('image');
-    
-    for (photo of imageEl) {
-      console.log(photo);
-      photo.addEventListener('mouseover', function() {
-        photo.style.width = "150%";
-      });
-      photo.addEventListener('mouseout', function() {
-        photo.style.width = "100%";
-      });
-    }
+    // Gallery images enlarge when moused over
+    const image1El = document.querySelector('.image1');
+    const image2El = document.querySelector('.image2');
+    const image3El = document.querySelector('.image3');
+
+    image1El.addEventListener('mouseover', function() {
+      image1El.style.width = "45vw";   
+    });
+    image1El.addEventListener('mouseout', function() {
+      image1El.style.width = "100%";
+    });
+
+    image2El.addEventListener('mouseover', function() {
+      image2El.style.width = "45vw";   
+    });
+    image2El.addEventListener('mouseout', function() {
+      image2El.style.width = "100%";
+    });
+
+    image3El.addEventListener('mouseover', function() {
+      image3El.style.width = "45vw";   
+    });
+    image3El.addEventListener('mouseout', function() {
+      image3El.style.width = "100%";
+    });
   </script>
 </body>
 </html>
