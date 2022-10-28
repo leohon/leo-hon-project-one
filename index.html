@@ -60,9 +60,9 @@
     <section class="gallery">
       <div class="wrapper">
         <ul>
-          <li><img src="./styles/textilee-assets/gallery-image-1.jpg" alt="a spool of yarn and two balls of yarn"></li>
-          <li><img src="./styles/textilee-assets/gallery-image-2.jpg" alt="a pair of scissors, one large and one small spool of string, and unwound measuring tape on some fabric"></li>
-          <li><img src="./styles/textilee-assets/gallery-image-3.jpg" alt="a wooden shelf with spools of ribbons"></li>
+          <li><img src="./styles/textilee-assets/gallery-image-1.jpg" alt="a spool of yarn and two balls of yarn" class="image"></li>
+          <li><img src="./styles/textilee-assets/gallery-image-2.jpg" alt="a pair of scissors, one large and one small spool of string, and unwound measuring tape on some fabric" class="image"></li>
+          <li><img src="./styles/textilee-assets/gallery-image-3.jpg" alt="a wooden shelf with spools of ribbons" class="image"></li>
         </ul>
       </div>
     </section>
@@ -163,10 +163,21 @@
     <p>Copyright &copy; 2019 Juno College</p>
   </footer>
 
+  <!-- JavaScript -->
   <script>
     // Adding a pop-up modal (on page load, or for images, etc)
-    // >>zoom in either on click or hover - width increase?
+    // >>zoom in on mouseover - width increase?
+    const imageEl = document.getElementsByClassName('image');
     
+    for (photo of imageEl) {
+      console.log(photo);
+      photo.addEventListener('mouseover', function() {
+        photo.style.width = "150%";
+      });
+      photo.addEventListener('mouseout', function() {
+        photo.style.width = "100%";
+      });
+    }
   </script>
 </body>
 </html>
