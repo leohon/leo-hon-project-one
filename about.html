@@ -51,9 +51,17 @@
 
     buttonEl.addEventListener('click', function(event) {
       if (event.target.tagName === "BUTTON") {
-        console.log("refreshed")
+        console.log("Refreshed")
 
-        if (press % 5 == 0) {
+        message(press);
+        
+        console.log(press)
+        press++;
+      }
+    });
+
+    const message = function(press) {
+      if (press % 5 == 0) {
           paragraphEl.textContent = "Page STILL under maintenance";
         }
         else if (press % 5 == 1) {
@@ -68,13 +76,7 @@
         else {
           paragraphEl.textContent = "99% COMPLETE";
         }
-        
-        console.log(press)
-        press++;
-      }
-    });
-
-
+    }
   </script>
 </body>
 </html>
