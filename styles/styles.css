@@ -676,10 +676,10 @@ nav ul a {
   width: 101%;
 }
 
-.wrapper {
+.about .wrapper {
   text-align: center;
 }
-.wrapper .content {
+.about .wrapper .content {
   background-color: #161515;
   color: #FFFFFF;
   padding: 25px 0;
@@ -943,7 +943,7 @@ footer {
     font-size: 100%;
   }
   nav ul a {
-    padding-left: 25px;
+    margin-left: 25px;
   }
   .home-header .h1-home {
     margin-top: 0;
@@ -1057,7 +1057,7 @@ footer {
     padding: 50px 0;
   }
   nav ul a {
-    padding-left: 10px;
+    margin-left: 10px;
   }
   .home-header nav ul a {
     background-color: #f5f5f5;
