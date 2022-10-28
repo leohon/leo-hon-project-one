@@ -31,5 +31,50 @@
       </nav>
     </div>
   </header>
+
+  <main id="main">
+    <div class="wrapper">
+      <p class="content">
+        Page under maintenance
+        <!-- Popup message appears here -->
+      </p>
+      <button>REFRESH</button>
+    </div>
+  </main>
+
+  <!-- Create popup when page refresh saying "under maintenance" (or something similar)-->
+  <script>
+    // Grab button and paragraph element
+    const buttonEl = document.querySelector('button');
+    const paragraphEl = document.querySelector('.content');
+    let press = 0;
+
+    buttonEl.addEventListener('click', function(event) {
+      if (event.target.tagName === "BUTTON") {
+        console.log("refreshed")
+
+        if (press % 5 == 0) {
+          paragraphEl.textContent = "Page STILL under maintenance";
+        }
+        else if (press % 5 == 1) {
+          paragraphEl.textContent = "ALMOST DONE";
+        }
+        else if (press % 5 == 2) {
+          paragraphEl.textContent = "98% COMPLETE";
+        }
+        else if (press % 5 == 3) {
+          paragraphEl.textContent = "99% COMPLETE";
+        }
+        else {
+          paragraphEl.textContent = "99% COMPLETE";
+        }
+        
+        console.log(press)
+        press++;
+      }
+    });
+
+
+  </script>
 </body>
 </html>

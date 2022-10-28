@@ -1,0 +1,12 @@
+@use './variables';
+
+.wrapper {
+  text-align: center;
+
+  .content {
+    background-color: variables.$black-two;
+    color: variables.$white;
+    padding: 25px 0;
+    margin: 25px 0;
+  }
+}

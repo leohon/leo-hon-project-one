@@ -676,6 +676,16 @@ nav ul a {
   width: 101%;
 }
 
+.wrapper {
+  text-align: center;
+}
+.wrapper .content {
+  background-color: #161515;
+  color: #FFFFFF;
+  padding: 25px 0;
+  margin: 25px 0;
+}
+
 .collect {
   background-color: #21404f;
   color: #FFFFFF;
