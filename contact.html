@@ -92,5 +92,31 @@
   <footer>
     <p>Copyright &copy; 2019 Juno College</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // feedback response when submit form
+    const buttonEl = document.querySelector('button');
+    const nameEl = document.querySelector('.name');
+    const emailEl = document.querySelector('.email');
+    const textEl = document.querySelector('textarea');
+    const sectionEl = document.querySelector('.contact-form');
+
+    buttonEl.addEventListener('click', function(event) {
+      event.preventDefault();
+      
+      const name = nameEl.value;
+      const email = emailEl.value;
+      const message = textEl.value;
+      
+      if (name && email && message) {
+        sectionEl.innerHTML = `Thanks for your submission, ${name}.`;
+        console.log("Submitted!");
+
+        sectionEl.style.color = "white";
+        sectionEl.style.textAlign = "center";
+      }
+    });
+  </script>
 </body>
 </html>
