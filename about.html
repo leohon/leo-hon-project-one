@@ -35,10 +35,10 @@
 
   <main id="main" class="about">
     <div class="wrapper">
-      <p class="content">
+      <h1>
         Page under maintenance
         <!-- Popup message appears here -->
-      </p>
+      </h1>
       <button>REFRESH <i class="fa-solid fa-arrows-rotate"></i></button>
     </div>
   </main>
@@ -48,34 +48,39 @@
   <script>
     // Create popup when page refresh saying "under maintenance" (or something similar)
     const buttonEl = document.querySelector('button');
-    const paragraphEl = document.querySelector('.content');
+    const headerEl = document.querySelector('h1');
     let press = 0;
 
     buttonEl.addEventListener('click', function(event) {
       if (event.target.tagName === "BUTTON") {
-        console.log("Refreshed")
+        press++;
+        
+        console.log("Refreshed");
+        console.log(press);
 
         message(press);
-        
-        console.log(press)
-        press++;
       }
     });
 
     const message = function(press) {
-      if (press % 6 == 0) {
-        paragraphEl.innerHTML = "Page STILL under maintenance";
+      if (press == 1) {
+        headerEl.innerHTML = "Page STILL under maintenance";
       }
-      else if (press % 6 == 1) {
-        paragraphEl.innerHTML = "ALMOST DONE";
+      else if (press == 2) {
+        headerEl.innerHTML = "ALMOST DONE";
       }
-      else if (press % 6 == 2) {
-        paragraphEl.innerHTML = "98% COMPLETE";
+      else if (press == 3) {
+        headerEl.innerHTML = "97% COMPLETE";
+      }
+      else if (press == 4) {
+        headerEl.innerHTML = "98% COMPLETE";
       }
       else {
-        paragraphEl.innerHTML = "99% COMPLETE";
+        headerEl.innerHTML = "99% COMPLETE";
       }
     }
+
+    headerEl.style.marginBottom = "25px";
   </script>
 </body>
 </html>
