@@ -226,7 +226,7 @@ html {
   overflow: hidden;
 }
 
-.skipLink {
+.skip-link {
   position: absolute;
   left: -1000px;
   z-index: 10;
@@ -236,7 +236,7 @@ html {
   padding: 10px 0;
 }
 
-.skipLink:focus {
+.skip-link:focus {
   left: 0;
   right: 0;
   text-align: center;
@@ -683,11 +683,11 @@ nav ul a {
   border-bottom: 10px solid #0CADC0;
   width: 65%;
 }
-.collect .imgContainer {
+.collect .img-container {
   height: 350px;
   position: relative;
 }
-.collect .imgContainer img {
+.collect .img-container img {
   width: 99.45%;
   -webkit-box-shadow: 15px 15px #0CADC0;
           box-shadow: 15px 15px #0CADC0;
@@ -739,11 +739,11 @@ nav ul a {
   top: 100px;
   right: 0;
 }
-.miss-post .imgContainer {
+.miss-post .img-container {
   position: relative;
   height: 350px;
 }
-.miss-post .imgContainer img {
+.miss-post .img-container img {
   position: absolute;
   top: -70px;
   right: 0;
@@ -874,10 +874,10 @@ footer {
     padding-bottom: 25px;
     padding-top: 0;
   }
-  .collect .imgContainer {
+  .collect .img-container {
     height: 300px;
   }
-  .collect .imgContainer img {
+  .collect .img-container img {
     top: -200px;
   }
   .collect p {
@@ -889,7 +889,7 @@ footer {
   .miss-post {
     top: 75px;
   }
-  .miss-post .imgContainer {
+  .miss-post .img-container {
     height: 225px;
   }
 }
@@ -919,10 +919,10 @@ footer {
     -webkit-box-shadow: -15px 15px #0CADC0;
             box-shadow: -15px 15px #0CADC0;
   }
-  .collect .imgContainer {
+  .collect .img-container {
     height: 250px;
   }
-  .miss-post .imgContainer {
+  .miss-post .img-container {
     height: 150px;
   }
 }
@@ -979,16 +979,16 @@ footer {
     height: 200px;
     margin-top: 25px;
   }
-  .collect .imgContainer {
+  .collect .img-container {
     height: 250px;
   }
-  .collect .imgContainer img {
+  .collect .img-container img {
     top: -100px;
   }
   .collect h2, .collect p {
     padding-left: 0;
   }
-  .miss-post .imgContainer {
+  .miss-post .img-container {
     height: 125px;
   }
   .comments {
@@ -1092,11 +1092,11 @@ footer {
     width: 50%;
     top: 0;
   }
-  .miss-post .imgContainer {
+  .miss-post .img-container {
     margin: 0;
     height: 10px;
   }
-  .miss-post .imgContainer img {
+  .miss-post .img-container img {
     display: none;
   }
   .miss-post div {
@@ -1108,7 +1108,7 @@ footer {
     border-top: 10px solid #0CADC0;
     margin-top: 25px;
   }
-  .collect .imgContainer img {
+  .collect .img-container img {
     top: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
